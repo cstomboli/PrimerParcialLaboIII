@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos</title>
+    <script type= "text/javascript" src="JS/funciones.js"></script>
+    <link rel="stylesheet" href="CSS/hoja.css"/> 
+
+</head>
+<body>
+    <div class="relative1">
+        <table id="tabla">
+            <br>
+            <label id="txtLista"> Lista de Materias</label>
+            <br>
+            <thead>
+                <tr>
+                    <th>Nombre Materia</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha</th>
+                    <th>Turno</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <div id="loading" >
+        <img src= "IMG/carrgando.gif">
+    </div>
+    <div id="container" > 
+        <div class="bCerrar"> 
+            <input type="button" class="btnCerrar" id="btnCerrar" value="X">
+            <br>
+        </div>
+        <div>
+            <label id="lblDatos" for="txtNombre">Nombre materia </label> 
+            <br>
+            <input type="text" name="nombre" id="materia" class="recuadro" placeholder="Nombre"> 
+        </div>
+        <div> 
+            <label id="lblDatos" for="txtApellido">Cuatrimestre</label>
+            <br>
+            <select  name="cuatrimestre" id="cuatrimestre" class="recuadro" disabled="true"> 
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div> 
+            <label id="lblDatos" for="txtFecha">Fecha</label>
+            <br>
+            <input type="date" name="apellido" id="fecha" class="recuadro" max="2020-5-21"> 
+        </div>
+        <div> 
+            <label id="lblDatos" for="txtTelefono">Turno</label>
+            <br>
+            <input type="radio" id="turnoMa" value="Mañana"> 
+            <label for="Mañana">Mañana</label>           
+            <input type="radio" id="turnoNo" value="Noche">
+            <label for="Noche">Noche</label>           
+
+            
+        </div>
+        <input type="button" class= "button" id="btnModificar" value="Modificar"> 
+        <input type="button" class= "button" id="btnEliminar" value="Eliminar"> 
+    </div>
+    
+</body>
+</html>
